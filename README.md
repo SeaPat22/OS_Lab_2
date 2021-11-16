@@ -1,1 +1,1 @@
-# OS_Lab_2
+# Banker's Algorithm
