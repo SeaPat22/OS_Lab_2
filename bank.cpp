@@ -87,34 +87,34 @@ int main() {
     }
     /////////////////////////////////////////////////////////////////////////
 
-<<<<<<< HEAD
-	// Closes the 'MAX.txt' and opens the 'Available.txt' file.
+    // Closes the 'MAX.txt' and opens the 'Available.txt' file.
     InputFile.close();
-	InputFile.open("Available.txt");
+    InputFile.open("Available.txt");
     /////////////////////////////////
 
-	// If the 'Available.txt' file could not open, stop the program.
-	if(!InputFile) {
-		std::cout << "Could not open input file." << '\n';
-		system("pause");
-		exit(-1);
-	}
-	///////////////////////////////////////////////////////
+    // If the 'Available.txt' file could not open, stop the program.
+    if(!InputFile) {
+	std::cout << "Could not open input file." << '\n';
+	system("pause");
+	exit(-1);
+    }
+    ///////////////////////////////////////////////////////
 
     // Gathers the amount of Available Resources for the Processes of the 
-	// system.
-	int Available[c];
-	for (int i = 0; i < c; i++) {
-		InputFile >> Available[i];
-	}
+    // system.
+    int Available[c];
+    for (int i = 0; i < c; i++) {
+	InputFile >> Available[i];
+    }
     
-	// Prints out the Available Array.
-	std::cout << "\nThe Available Resources for the Processes are:\n";
-	for (int i = 0; i < c; i++) {
-		std::cout << Available[i] << ' ';
-	}
-	std::cout << '\n';
-=======
+    // Prints out the Available Array.
+    std::cout << "\nThe Available Resources for the Processes are:\n";
+    for (int i = 0; i < c; i++) {
+	std::cout << Available[i] << ' ';
+    }
+    std::cout << '\n';
+    ///////////////////////////////////////////////////////////////////
+	
     // Closes the 'MAX.txt' and opens the 'Available.txt' file.
     InputFile.close();
     InputFile.open("Available.txt");
@@ -141,7 +141,6 @@ int main() {
 	std::cout << Available[i] << ' ';
     }
     std::cout << '\n';
->>>>>>> f20da6f792276b61825969eb86cf569d25d8307c
     /////////////////////////////////////////////////////////////////// 
 
     // Closes the 'Available.txt' file.
