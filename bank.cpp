@@ -4,9 +4,12 @@
 /* Operating System Lab 2 -- Banker's Algorithm
 
 This program utilizes Banker's Algorithm to avoid deadlock. Through the five 
-Processes used in this program: P0, P1, P2, P3, P4, are allocated Resources and
-through use of Banker's Algorithm, can find the Safe Sequence so that the
-Processes in the system can avoid deadlock. */
+Processes used in this program: P0, P1, P2, P3, P4, the initial instances of 
+each Resource are allocated to them from the 'Allocation.txt' input file and 
+using the maximum instances of each Process that are gathered from the 'MAX.txt' 
+input file and the available instances of each Resource gathered from the 
+'Available.txt' input file, the Safe Sequence is calculated for the Processes
+to execute in the system and are able to avoid deadlock with one another. */
 
 
 #include <iostream>
