@@ -87,10 +87,10 @@ int main() {
     }
     /////////////////////////////////////////////////////////////////////////
 
-    // Closes the 'MAX.txt' and opens the 'Open.txt' file.
+    // Closes the 'MAX.txt' and opens the 'Available.txt' file.
     InputFile.close();
-    InputFile.open("Open.txt");
-    ////////////////////////////
+    InputFile.open("Available.txt");
+    /////////////////////////////////
 
     // If the 'Open.txt' file could not open, stop the program.
     if(!InputFile) {
@@ -102,20 +102,20 @@ int main() {
 
     // Gathers the amount of available Resources for the Processes of the 
     // system.
-    int Open[c];
+    int Available[c];
     for (int i = 0; i < c; i++) {
-	InputFile >> Open[i];
+	InputFile >> Available[i];
     }
     
     // Prints out the Open Array.
-    std::cout << "\nThe available Resources for the Processes are:\n";
+    std::cout << "\nThe Available Resources for the Processes are:\n";
     for (int i = 0; i < c; i++) {
-	std::cout << Open[i] << ' ';
+	std::cout << Available[i] << ' ';
     }
     std::cout << '\n';
     /////////////////////////////////////////////////////////////////// 
 
-    // Closes the 'Open.txt' file.
+    // Closes the 'Available.txt' file.
     InputFile.close();
     ///////////////////
     
