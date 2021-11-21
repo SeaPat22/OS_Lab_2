@@ -92,7 +92,7 @@ int main() {
     InputFile.open("Available.txt");
     /////////////////////////////////
 
-    // If the 'Open.txt' file could not open, stop the program.
+    // If the 'Available.txt' file could not open, stop the program.
     if(!InputFile) {
 	std::cout << "Could not open input file." << '\n';
 	system("pause");
@@ -107,7 +107,7 @@ int main() {
 	InputFile >> Available[i];
     }
     
-    // Prints out the Open Array.
+    // Prints out the Available Array.
     std::cout << "\nThe Available Resources for the Processes are:\n";
     for (int i = 0; i < c; i++) {
 	std::cout << Available[i] << ' ';
@@ -130,7 +130,7 @@ int main() {
     ///////////////////////////////////////////////////
 
     // Sets all of the elements of the 'f' Array to false, meaning that the
-    // number of available resources is now represented by the Open Array. 
+    // number of available resources is now represented by the Available Array. 
     int f[r];
     for (int k = 0; k < r; k++) { 
         f[k] = 0; 
@@ -168,10 +168,10 @@ int main() {
 
     // Printing out the SAFE Sequence of the system throught the 'ans' Array.
     std::cout << "\nThe SAFE Sequence of the system is: "; 
-        for (int i = 0; i < r - 1; i++) { 
-	    std::cout << " P" << ans[i] << " ->";
-        } 
-	std::cout << " P" << ans[r - 1] << '\n';
+    for (int i = 0; i < r - 1; i++) { 
+	std::cout << " P" << ans[i] << " ->";
+    } 
+    std::cout << " P" << ans[r - 1] << '\n';
     ///////////////////////////////////////////////////////
 
     return 0; 
