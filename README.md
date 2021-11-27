@@ -8,6 +8,7 @@
 > _Made in C++ Language._
 >
 > _Compiled in a Linux environment._
+> _Compile w/ g++ bank.cpp -o bank & ./bank_
 
 
 #### The Results from the Program:
